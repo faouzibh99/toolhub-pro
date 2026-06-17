@@ -85,7 +85,7 @@ main { flex: 1; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 56px;
   gap: 24px;
 }
 
@@ -192,6 +192,30 @@ main { flex: 1; }
   margin: 0 auto;
 }
 
+/* ---------- Hero + Tool combined (above-the-fold) ---------- */
+.hero-tool {
+  background: linear-gradient(180deg, var(--blue-dark) 0%, var(--blue) 38%, var(--bg) 38%);
+  padding: 22px 0 20px;
+}
+.hero-tool__intro {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.hero-tool__intro h1 {
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 10px 0 6px;
+  letter-spacing: -0.5px;
+}
+.hero-tool__intro p {
+  font-size: 0.95rem;
+  opacity: 0.92;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
 .page-header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -223,7 +247,7 @@ main { flex: 1; }
 
 /* ---------- Word Counter Tool ---------- */
 .tool-section {
-  padding: 40px 0 56px;
+  padding: 8px 0 56px;
 }
 
 .tool-layout {
@@ -236,16 +260,16 @@ main { flex: 1; }
 
 .textarea-wrap {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 #wordInput {
   width: 100%;
-  min-height: 420px;
-  padding: 20px;
+  min-height: 140px;
+  padding: 14px 18px;
   font-family: var(--font);
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 0.98rem;
+  line-height: 1.65;
   color: var(--text);
   background: var(--surface);
   border: 2px solid var(--border);
@@ -266,7 +290,7 @@ main { flex: 1; }
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .btn {
@@ -314,8 +338,8 @@ main { flex: 1; }
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
 .stat-card {

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Default SEO (overridden dynamically by js/blog.js based on ?post=) -->
+  <title>Article | ToolHub Pro Blog</title>
+  <meta name="description" content="Read the latest writing, SEO, and productivity guides from ToolHub Pro.">
+  <meta name="keywords" content="writing tips, seo guide, content marketing, productivity">
+  <link rel="canonical" href="https://toolhubpro.example.com/blog-post.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Article | ToolHub Pro Blog">
+  <meta property="og:description" content="Read the latest writing, SEO, and productivity guides from ToolHub Pro.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80">
+  <meta property="og:url" content="https://toolhubpro.example.com/blog-post.html">
+  <meta property="og:site_name" content="ToolHub Pro">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Article | ToolHub Pro Blog">
+  <meta name="twitter:description" content="Read the latest writing, SEO, and productivity guides from ToolHub Pro.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧰</text></svg>">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- AdSense (REPLACE WITH YOUR ADSENSE CODE once approved) -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">ToolHub<span>Pro</span></a>
+      <nav>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="btn-theme" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Post content (incl. breadcrumb, TOC, ads, related posts, etc.)
+           is rendered dynamically by js/blog.js based on ?post=ID -->
+      <div id="postContainer">
+        <div class="post-layout">
+          <div class="post-content">
+            <div class="skeleton skeleton-line skeleton-line--short" style="height:16px; width:200px; margin-bottom:20px;"></div>
+            <div class="skeleton skeleton-line skeleton-line--title" style="height:40px; width:90%; margin-bottom:24px;"></div>
+            <div class="skeleton" style="height:300px; border-radius:12px; margin-bottom:32px;"></div>
+            <div class="skeleton skeleton-line" style="margin-bottom:12px;"></div>
+            <div class="skeleton skeleton-line" style="margin-bottom:12px;"></div>
+            <div class="skeleton skeleton-line skeleton-line--short"></div>
+          </div>
+          <aside class="post-sidebar">
+            <div class="skeleton" style="height:400px; border-radius:12px;"></div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">ToolHub<span>Pro</span></a>
+          <p>Free online tools and practical guides to help you write better, faster, and smarter. No sign-up required, ever.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Tools</h5>
+          <ul>
+            <li><a href="index.html">Word Counter</a></li>
+            <li><a href="index.html">Character Counter</a></li>
+            <li><a href="index.html">Reading Time Calculator</a></li>
+            <li><a href="index.html">Case Converter</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 ToolHub Pro. All rights reserved.</span>
+        <span>Made for writers, students, and creators everywhere.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/adsense.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Free Word Counter Online — Count Words, Characters & Reading Time | ToolHub Pro</title>
+  <meta name="description" content="Free online Word Counter with real-time word count, character count, sentence count, reading time, speaking time, and keyword density. No sign-up required.">
+  <meta name="keywords" content="word counter, character counter, word count tool, online word counter, free word count, reading time calculator, keyword density checker">
+  <link rel="canonical" href="https://toolhubpro.example.com/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Word Counter Online — ToolHub Pro">
+  <meta property="og:description" content="Count words, characters, sentences, and reading time instantly. 100% free, no sign-up, works in your browser.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80">
+  <meta property="og:url" content="https://toolhubpro.example.com/index.html">
+  <meta property="og:site_name" content="ToolHub Pro">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Word Counter Online — ToolHub Pro">
+  <meta name="twitter:description" content="Count words, characters, sentences, and reading time instantly. 100% free, no sign-up required.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80">
+
+  <!-- Favicon (emoji-based, no external file needed) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧰</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- AdSense (REPLACE WITH YOUR ADSENSE CODE once approved) -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <!-- Schema.org: WebSite + WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "ToolHub Pro",
+        "url": "https://toolhubpro.example.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://toolhubpro.example.com/blog.html?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Word Counter Pro",
+        "url": "https://toolhubpro.example.com/index.html",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any (Web Browser)",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Free online word counter that calculates words, characters, sentences, paragraphs, reading time, speaking time, and keyword density in real time."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">ToolHub<span>Pro</span></a>
+
+      <nav>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="btn-theme" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero__eyebrow">100% Free • No Sign-Up • Works Instantly</span>
+        <h1>Word Counter Pro</h1>
+        <p>Count words, characters, sentences, and paragraphs in real time. Check reading time, speaking time, and keyword density — all in your browser, all for free.</p>
+      </div>
+    </section>
+
+    <!-- ================= AD: ABOVE TOOL ================= -->
+    <div class="container">
+      <div class="adsense-slot adsense-slot--leaderboard" data-slot="homepage-top" data-size="728x90"></div>
+    </div>
+
+    <!-- ================= WORD COUNTER TOOL ================= -->
+    <section class="tool-section">
+      <div class="container">
+        <div class="tool-layout">
+
+          <div class="tool-main">
+
+            <div class="textarea-wrap">
+              <label for="wordInput" class="sr-only" style="position:absolute; left:-9999px;">Enter or paste your text</label>
+              <textarea id="wordInput" placeholder="Start typing or paste your text here to see live word count, character count, reading time, and more..." spellcheck="true"></textarea>
+            </div>
+
+            <div class="tool-toolbar">
+              <button class="btn btn-primary" id="btnCopy">📋 Copy Text</button>
+              <button class="btn btn-success" id="btnDownload">⬇️ Download .txt</button>
+              <button class="btn btn-danger" id="btnClear">🗑️ Clear</button>
+              <button class="btn btn-secondary" id="btnUppercase">AA Uppercase</button>
+              <button class="btn btn-secondary" id="btnLowercase">aa Lowercase</button>
+              <button class="btn btn-secondary" id="btnTitleCase">Aa Title Case</button>
+              <button class="btn btn-secondary" id="btnSentenceCase">Aa. Sentence Case</button>
+              <button class="btn btn-secondary" id="btnRemoveSpaces">✨ Remove Extra Spaces</button>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-card__icon">📝</div>
+                <div class="stat-card__value" id="statWords">0</div>
+                <div class="stat-card__label">Words</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__icon">🔤</div>
+                <div class="stat-card__value" id="statCharsWith">0</div>
+                <div class="stat-card__label">Characters (with spaces)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__icon">🔡</div>
+                <div class="stat-card__value" id="statCharsWithout">0</div>
+                <div class="stat-card__label">Characters (no spaces)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__icon">📐</div>
+                <div class="stat-card__value" id="statSentences">0</div>
+                <div class="stat-card__label">Sentences</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__icon">📄</div>
+                <div class="stat-card__value" id="statParagraphs">0</div>
+                <div class="stat-card__label">Paragraphs</div>
+              </div>
+              <div class="stat-card stat-card--green">
+                <div class="stat-card__icon">⏱️</div>
+                <div class="stat-card__value" id="statReadingTime">0 sec</div>
+                <div class="stat-card__label">Reading Time</div>
+              </div>
+              <div class="stat-card stat-card--green">
+                <div class="stat-card__icon">🎤</div>
+                <div class="stat-card__value" id="statSpeakingTime">0 sec</div>
+                <div class="stat-card__label">Speaking Time</div>
+              </div>
+            </div>
+
+            <!-- Keyword Density -->
+            <div class="keyword-section">
+              <h3>Top Keyword Density</h3>
+              <ul class="keyword-list" id="keywordList">
+                <li class="keyword-list__empty">Start typing to see keyword density...</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="tool-sidebar">
+            <div class="adsense-slot adsense-slot--sidebar" data-slot="homepage-sidebar" data-size="300x600"></div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AD: BELOW TOOL STATS ================= -->
+    <div class="container">
+      <div class="adsense-slot adsense-slot--leaderboard" data-slot="homepage-bottom" data-size="728x90"></div>
+    </div>
+
+    <!-- ================= WHY USE THIS TOOL ================= -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Why Use Word Counter Pro?</h2>
+        <p class="section__subtitle">Built for writers, students, marketers, and translators who need accurate text analytics — instantly.</p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">⚡</div>
+            <h3>Real-Time Results</h3>
+            <p>Every statistic updates as you type — no buttons to click, no waiting. See your word count, character count, and reading time update live.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🔒</div>
+            <h3>100% Private</h3>
+            <p>Your text never leaves your browser. There's no server, no upload, and no tracking of your content. Everything happens locally on your device.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🎯</div>
+            <h3>Built for Real Use Cases</h3>
+            <p>Hit essay word limits, format Twitter posts, write SEO meta descriptions, or time a speech — all with the same tool.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🆓</div>
+            <h3>Always Free</h3>
+            <p>No account, no subscription, no usage limits. Word Counter Pro is free for everyone, forever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LATEST BLOG POSTS ================= -->
+    <section class="section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+      <div class="container">
+        <h2 class="section__title">From the Blog</h2>
+        <p class="section__subtitle">Guides on writing, SEO, content marketing, and productivity.</p>
+        <div class="blog-grid" id="latestPosts"></div>
+        <div style="text-align:center; margin-top:36px;">
+          <a href="blog.html" class="btn btn-primary">View All Articles</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">ToolHub<span>Pro</span></a>
+          <p>Free online tools and practical guides to help you write better, faster, and smarter. No sign-up required, ever.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Tools</h5>
+          <ul>
+            <li><a href="index.html">Word Counter</a></li>
+            <li><a href="index.html">Character Counter</a></li>
+            <li><a href="index.html">Reading Time Calculator</a></li>
+            <li><a href="index.html">Case Converter</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 ToolHub Pro. All rights reserved.</span>
+        <span>Made for writers, students, and creators everywhere.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/adsense.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
